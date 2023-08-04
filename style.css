@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #222831;
+    color: #fff;
+}
+p {
+    font-size: 20px;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+#navbar {
+    border-radius: 15px;
+    z-index: 1;
+    background: #393E46;
+    flex-wrap: nowrap;
+    border-style: solid;
+    border-color: #EEEEEE;
+    @media (max-width: 515px) {
+        width: auto;
+    }
+}
+.container{
+    padding: 10px 10px;
+}
+.logo{
+    width: 140px;
+    margin-left: 50px;
+}
+.logo a {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+.logo a:hover {
+    color: #00ADB5;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+nav ul li a:hover{
+    color: white;
+    transition: 0.5s;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00ADB5;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+.headerText {
+    margin-top: 20%;
+    margin-left: 100px;
+    font-size: 30px;
+    max-width: 40%;
+}
+.headerText h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+.headerDesc {
+    color: #00ADB5;
+}
+/*   About   */
+#aboutWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    padding-top: 70px;
+    @media (max-width: 515px) {
+        padding-top: 160px;
+    }
+}
+.aboutImg {
+    width: 25%;
+    border-radius: 15px;
+    transition: 0.6s;
+    object-fit: cover;
+    @media (max-width: 800px) {
+        display: none;
+    }
+}
+.aboutImg:hover {
+    transform: scale(1.2);
+}
+.about{
+    width: 100%;
+    margin: 0% 5% 5% 5%;
+}
+.textAbout {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.textAboutTitle {
+    font-size: 25px;
+    color: #00ADB5;
+}
+.titles {
+    font-size: 50px;
+    margin-bottom: 15px;
+    width: min-content;
+    transition: 0.6s;
+}
+.titles:hover {
+    color: #00ADB5;
+    
+    transform: scale(1.5) translate(50px);
+}
+.sticky {
+    position: fixed;
+    top: 10px;
+    width: 99%;
+}
+/*   Skills   */
+.skillsWrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+    @media (max-width: 640px) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.cardSkillWrapper {
+    height: 350px;
+    width: 250px;
+    background: #393E46;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s;
+    border-radius: 15px;
+    border-color: #EEEEEE;
+    border-style: solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    @media (max-width: 640px) {
+        margin-bottom: 50px;
+    }
+}
+.cardSkillWrapper:hover {
+    transform: scale(1.2);
+    color: #00ADB5;
+}
+.cardAboutItem {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cardAboutItem:hover {
+    color: white;
+}
+.skillsLogo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+.skillsList {
+    list-style: none;
+}
+.skillItem {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    font-size: 25px;
+    color: #EEEEEE;
+}
+/*   Works    */
+#works {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 70px;
+    @media (max-width: 515px) {
+        padding-top: 160px;
+    }
+}
+.worksWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5% 0% 0% 5%;
+    flex-wrap: wrap;
+    @media (max-width: 1405px) {
+        justify-content: center;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    @media (max-width: 800px) {
+        padding: 0;
+    }
+}
+.workCard {
+    background: #393E46;
+    width: 400px;
+    padding: 15px;
+    border-width: 5px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    transition-duration: 0.4s;
+    @media (max-width: 1405px) {
+        margin-bottom: 50px;
+    }
+}
+.workCard:hover {
+    transform: scale(1.1);
+    border-color: #00ADB5;
+}
+.workCardTitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.workCardImg {
+    background: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 250px;
+    border-style: solid;
+    border-color: #00ADB5;
+    object-fit: cover;
+}
+.workCardDesc {
+    padding: 10px;
+}
+.worksLinks {
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.worksLinks:hover {
+    color: #00ADB5;
+}
+/*   Footer   */
+#contactWrapper {
+    height: 250px;
+    width: 100%;
+    background: #393E46;
+    margin-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.contactTitle {
+    padding: 2.5% 0 2.5% 0;
+    color: #00ADB5;
+}
+.contactSubtitle {
+    margin: 0 0 2.5% 0;
+}
+.logoContact {
+    color: #00ADB5;
+}

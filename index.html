@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Coquisart Boris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <h1 class="logo"><a href="#header">Accueil</a></h1>
+                <ul>
+                    <li><a href="#aboutWrapper">Presentation</a></li>
+                    <li><a href="#works">Réalisations</a></li>
+                    <li><a href="#contactWrapper">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="headerText">
+                <p>Développeur Web</p>
+                <h1 class="headerDesc">Boris Coquisart</h1>
+            </div>
+        </div>
+    </div>
+    <div id="aboutWrapper">
+        <img class="aboutImg" src="">
+        <div class="about">
+            <h1 class="titles">Présentation</h1>
+            <p class="textAboutTitle">Boris Coquisart - 27 ans</p>
+            <p class="textAbout">Après un Bac Pro Maintenance Industrielle et diverses exprériences professionelles dans les domaines de l'industrie et du BTP, j'ai choisi de me reconvertir dans la programmation via OpenClassrooms et son parcours Développeur Web.</p>
+            <p class="textAbout">J'ai pu travailler sur des projets divers et gagner en compétences sur toutes les phases de développement d'un projet.</p>
+            <p class="textAbout">Je suis désormais à la recherche d'une première expérience professionnelle dans le domaine du développement Web.</p>
+            <div class="skillsWrapper">
+                <div class="cardSkillWrapper">
+                    <i class="fa-solid fa-eye skillsLogo"></i>    
+                    <p class="cardAboutItem">HTML / CSS</p>
+                    <p class="cardAboutItem">JavaScript</p>
+                    <p class="cardAboutItem">React</p>
+                </div>
+                <div class="cardSkillWrapper">
+                    <p><i class="fa-solid fa-database skillsLogo"></i></p>
+                    <p class="cardAboutItem">Node JS</p>
+                    <p class="cardAboutItem">MySQL</p>
+                    <p class="cardAboutItem">Mongo db</p>
+                </div>
+                <div class="cardSkillWrapper">
+                    <p><i class="fa-solid fa-wrench skillsLogo"></i></p>
+                    <p class="cardAboutItem">Visual Studio Code</p>
+                    <p class="cardAboutItem">NPM</p>
+                    <p class="cardAboutItem">Github</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+    <div id="works">
+        <h1 class="titles">Réalisations</h1>
+        <div class="worksWrapper">
+            <div class="workCard">
+                <h2 class="workCardTitle">BOOKI</h2>
+                <img class="workCardImg" src="./images/logoHtml.jpg">
+                <p class="workCardDesc">Le projet Booki consiste en la création de la page d'accueil d'une agence de voyage avec HTML & CSS, il est le premier projet de la formation Développeur Web d'OpenClassrooms, il fut donc pour moi ma première expérience dans le domaine du Développement Web, le site se doit d'être fidèle à une maquette et d'être responsive.</p>
+                <a href="https://github.com/CoquisartBoris/test_repo_perso_booki" class="worksLinks" target="blank">Lien du projet</a>
+            </div>
+            <div class="workCard">
+                <h2 class="workCardTitle">KASA</h2>
+                <img class="workCardImg" src="./images/logoReact.png">
+                <p class="workCardDesc">Le projet KASA consiste en la création d'une application Web de location immobilière avec React. Différentes étapes ont été nécessaires à la réalisation de ce projet, notamment la création du routeur et les différentes pages de l'application, le site se doit lui aussi d'être fidèle à une maquette donnée et responsive.</p>
+                <a href="https://github.com/CoquisartBoris/Projet_React" class="worksLinks" target="blank">Lien du projet</a>
+            </div>
+            <div class="workCard">
+                <h2 class="workCardTitle">Mon vieux Grimoire</h2>
+                <img class="workCardImg" src="./images/logoNodeJs.png">
+                <p class="workCardDesc">Le projet mon vieux Grimoire au développement du back-end d'un site de notation de livres à travers Node.js, la création d'un serveur Express et MongoDB. La création d'une API, d'un schéma de données, d'une authentification utilisateurs et la gestion des différentes routes permettant le bon fonctionnement du site.</p>
+                <a href="https://github.com/CoquisartBoris/Projet_Backend" class="worksLinks" target="blank">Lien du projet </a>
+            </div>
+        </div>
+    </div>
+    <footer id="contactWrapper">
+        <h1 class="contactTitle">Me contacter</h1>
+        <h2 class="contactSubtitle"><i class="fa-solid fa-envelope logoContact"></i> : coquisartb@gmail.com</h2>
+        <h2 class="contactSubtitle"><i class="fa-solid fa-mobile-screen logoContact"></i> : +33 6 23 99 74 92</h2>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
